@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "sipeed.tang-primer-20k",
+  "name": "Tang Primer 20K",
+  "vendor": "Sipeed",
+  "revision": "Dock",
+  "target": { "family": "gowin", "device": "GW2A-LV18PG256C8/I7" },
+  "clocks": [
+    { "name": "clk", "pin": "H11", "frequencyMHz": 27, "ioStandard": "LVCMOS33" }
+  ],
+  "signals": [
+    { "name": "led[0]", "pin": "L16", "group": "LEDs", "label": "LED0", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[1]", "pin": "L14", "group": "LEDs", "label": "LED1", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[2]", "pin": "N14", "group": "LEDs", "label": "LED2", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[3]", "pin": "N16", "group": "LEDs", "label": "LED3", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[4]", "pin": "A13", "group": "LEDs", "label": "LED4", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[5]", "pin": "C13", "group": "LEDs", "label": "LED5", "activeLow": true, "ioStandard": "LVCMOS33" },
+
+    { "name": "btn[0]", "pin": "T10", "group": "Buttons", "label": "S0", "activeLow": true, "ioStandard": "LVCMOS33", "pull": "up" },
+
+    { "name": "uart_tx", "pin": "M11", "group": "UART", "label": "FPGA_TX", "ioStandard": "LVCMOS33", "pull": "up" },
+    { "name": "uart_rx", "pin": "T13", "group": "UART", "label": "FPGA_RX", "ioStandard": "LVCMOS33", "pull": "up" }
+  ],
+  "programmer": { "tool": "openFPGALoader", "args": ["-b", "tangprimer20k"], "target": "sram" },
+  "usb": [
+    { "vid": "0x0403", "pid": "0x6010" }
+  ],
+  "documentation": "https://wiki.sipeed.com/hardware/en/tang/tang-primer-20k/primer-20k.html",
+  "sources": [
+    "https://raw.githubusercontent.com/litex-hub/litex-boards/master/litex_boards/platforms/sipeed_tang_primer_20k.py",
+    "https://raw.githubusercontent.com/YosysHQ/apicula/master/examples/primer20k.cst",
+    "https://raw.githubusercontent.com/trabucayre/openFPGALoader/master/doc/boards.yml"
+  ],
+  "note": "Core board on the Dock. Clock H11 (27 MHz), the six LEDs and button T10 agree between LiteX-boards (CARD1 connector mapping) and apicula's example. UART M11/T13 follows LiteX-boards and Sipeed's examples; apicula's example uses A15/D14 instead. Still to confirm on hardware: LED polarity (marked active low) and the debugger's USB product string (only the FT2232 IDs are listed, so detection asks which board it is). Checked 2026-10-04."
+}
