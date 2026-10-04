@@ -33,3 +33,8 @@ with the toolchain FPGALab tests against, and the published archive must install
 editor (Window ▸ Boards) shows a board's problems while you define it.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) to add a board.
+
+## Licence
+
+[CC0 1.0 Universal](LICENSE): the packs are in the public domain. Contributions are accepted
+under the same terms (see [CONTRIBUTING.md](CONTRIBUTING.md)).

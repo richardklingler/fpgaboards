@@ -1,5 +1,16 @@
 # Adding a board
 
+## Licence of contributions
+
+Everything in this repository is dedicated to the public domain under
+[CC0 1.0](LICENSE): anyone may use, change and redistribute the packs for any purpose, without
+conditions — FPGALab bundles them, and projects created from a template carry no licence
+obligations. By opening a pull request you agree that your contribution is released under CC0
+1.0, and you confirm that it is your own work or plain facts (pin numbers, part numbers, USB ids).
+Don't copy files or text from sources whose licence doesn't allow that — take the facts and
+write the definition yourself.
+
+
 The easiest way: define the board in FPGALab (File ▸ New Board…, or File ▸ Import Board from
 Constraints File… with your board's `.pcf`/`.lpf`/`.cst`/`.ccf`), test it on the hardware, then copy
 the `.fpgaboard` file from `~/Library/Application Support/FPGALab/Boards/` into a pack here.
