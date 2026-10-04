@@ -1,5 +1,5 @@
 {
-  "generated" : "2026-10-04T19:37:04Z",
+  "generated" : "2026-10-04T19:58:06Z",
   "name" : "FPGALab community boards",
   "packages" : [
     {
@@ -10,6 +10,24 @@
       "name" : "Sipeed Tang",
       "type" : "boards",
       "versions" : [
+        {
+          "boards" : [
+            "Tang Primer 20K"
+          ],
+          "download" : {
+            "sha256" : "73577a4bdd4bd253a8c80f8c38e273a9c403ab6e4d4aa147a54b434e3baef26b",
+            "size" : 3407,
+            "url" : "https://richardklingler.github.io/fpgaboards/packs/sipeed.tang-1.0.1.fpgapack"
+          },
+          "usb" : [
+            {
+              "pid" : "0x6010",
+              "product" : "JTAG Debugger",
+              "vid" : "0x0403"
+            }
+          ],
+          "version" : "1.0.1"
+        },
         {
           "boards" : [
             "Tang Primer 20K"
