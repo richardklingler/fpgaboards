@@ -23,7 +23,7 @@
   ],
   "programmer": { "tool": "openFPGALoader", "args": ["-b", "tangprimer20k"], "target": "sram" },
   "usb": [
-    { "vid": "0x0403", "pid": "0x6010" }
+    { "vid": "0x0403", "pid": "0x6010", "product": "JTAG Debugger" }
   ],
   "documentation": "https://wiki.sipeed.com/hardware/en/tang/tang-primer-20k/primer-20k.html",
   "sources": [
@@ -31,5 +31,5 @@
     "https://raw.githubusercontent.com/YosysHQ/apicula/master/examples/primer20k.cst",
     "https://raw.githubusercontent.com/trabucayre/openFPGALoader/master/doc/boards.yml"
   ],
-  "note": "Core board on the Dock. Clock H11 (27 MHz), the six LEDs and button T10 agree between LiteX-boards (CARD1 connector mapping) and apicula's example. UART M11/T13 follows LiteX-boards and Sipeed's examples; apicula's example uses A15/D14 instead. Still to confirm on hardware: LED polarity (marked active low) and the debugger's USB product string (only the FT2232 IDs are listed, so detection asks which board it is). Checked 2026-10-04."
+  "note": "Core board on the Dock. Clock H11 (27 MHz), the six LEDs and button T10 agree between LiteX-boards (CARD1 connector mapping) and apicula's example. UART M11/T13 follows LiteX-boards and Sipeed's examples; apicula's example uses A15/D14 instead. The Dock's BL616 debugger reports 0403:6010 “JTAG Debugger” by SIPEED with the serial “FactoryAIOT Pro” (read from a real board, 2026-10-04) — the same as the Tang Nano 9K's, so FPGALab asks which board it is unless a project names it. Still to confirm on hardware: LED polarity (marked active low). Checked 2026-10-04."
 }

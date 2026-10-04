@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "sipeed.tang",
   "name": "Sipeed Tang",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "boards",
   "maintainer": "FPGALab community",
   "description": "Sipeed's Tang boards with Gowin FPGAs. Starts with the Tang Primer 20K on its dock.",
