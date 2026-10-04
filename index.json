@@ -1,0 +1,34 @@
+{
+  "generated" : "2026-10-04T19:31:20Z",
+  "name" : "FPGALab community boards",
+  "packages" : [
+    {
+      "description" : "Sipeed's Tang boards with Gowin FPGAs. Starts with the Tang Primer 20K on its dock.",
+      "documentation" : "https://wiki.sipeed.com/hardware/en/tang/tang-primer-20k/primer-20k.html",
+      "id" : "sipeed.tang",
+      "maintainer" : "FPGALab community",
+      "name" : "Sipeed Tang",
+      "type" : "boards",
+      "versions" : [
+        {
+          "boards" : [
+            "Tang Primer 20K"
+          ],
+          "download" : {
+            "sha256" : "bd9818072fb7bfb6a0082b51c139ea11f941e8af184732c6cd4ec0ebc09df77b",
+            "size" : 3237,
+            "url" : "https://richardklingler.github.io/fpgaboards/packs/sipeed.tang-1.0.0.fpgapack"
+          },
+          "usb" : [
+            {
+              "pid" : "0x6010",
+              "vid" : "0x0403"
+            }
+          ],
+          "version" : "1.0.0"
+        }
+      ]
+    }
+  ],
+  "schema" : 1
+}
