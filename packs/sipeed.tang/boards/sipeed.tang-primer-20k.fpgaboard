@@ -9,12 +9,12 @@
     { "name": "clk", "pin": "H11", "frequencyMHz": 27, "ioStandard": "LVCMOS33" }
   ],
   "signals": [
-    { "name": "led[0]", "pin": "L16", "group": "LEDs", "label": "LED0", "activeLow": true, "ioStandard": "LVCMOS33" },
-    { "name": "led[1]", "pin": "L14", "group": "LEDs", "label": "LED1", "activeLow": true, "ioStandard": "LVCMOS33" },
-    { "name": "led[2]", "pin": "N14", "group": "LEDs", "label": "LED2", "activeLow": true, "ioStandard": "LVCMOS33" },
-    { "name": "led[3]", "pin": "N16", "group": "LEDs", "label": "LED3", "activeLow": true, "ioStandard": "LVCMOS33" },
-    { "name": "led[4]", "pin": "A13", "group": "LEDs", "label": "LED4", "activeLow": true, "ioStandard": "LVCMOS33" },
-    { "name": "led[5]", "pin": "C13", "group": "LEDs", "label": "LED5", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[0]", "pin": "C13", "group": "LEDs", "label": "LED0", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[1]", "pin": "A13", "group": "LEDs", "label": "LED1", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[2]", "pin": "N16", "group": "LEDs", "label": "LED2", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[3]", "pin": "N14", "group": "LEDs", "label": "LED3", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[4]", "pin": "L14", "group": "LEDs", "label": "LED4", "activeLow": true, "ioStandard": "LVCMOS33" },
+    { "name": "led[5]", "pin": "L16", "group": "LEDs", "label": "LED5", "activeLow": true, "ioStandard": "LVCMOS33" },
 
     { "name": "btn[0]", "pin": "T10", "group": "Buttons", "label": "S0", "activeLow": true, "ioStandard": "LVCMOS33", "pull": "up" },
 
@@ -31,5 +31,5 @@
     "https://raw.githubusercontent.com/YosysHQ/apicula/master/examples/primer20k.cst",
     "https://raw.githubusercontent.com/trabucayre/openFPGALoader/master/doc/boards.yml"
   ],
-  "note": "Core board on the Dock. Clock H11 (27 MHz), the six LEDs and button T10 agree between LiteX-boards (CARD1 connector mapping) and apicula's example. UART M11/T13 follows LiteX-boards and Sipeed's examples; apicula's example uses A15/D14 instead. The Dock's BL616 debugger reports 0403:6010 “JTAG Debugger” by SIPEED with the serial “FactoryAIOT Pro” (read from a real board, 2026-10-04) — the same as the Tang Nano 9K's, so FPGALab asks which board it is unless a project names it. Still to confirm on hardware: LED polarity (marked active low). Checked 2026-10-04."
+  "note": "Core board on the Dock. Clock H11 (27 MHz) and button T10 agree between LiteX-boards (CARD1 connector mapping) and apicula's example. The six LEDs (active low) in the order of their printed names, from the Dock 3714 schematic (sheet 1/9): LED0 C13, LED1 A13, LED2 N16, LED3 N14, LED4 L14, LED5 L16 — LiteX-boards and apicula list them the other way round; both the order and the polarity checked on a real board, 2026-11-05. UART M11/T13 follows LiteX-boards and Sipeed's examples; apicula's example uses A15/D14 instead. The Dock's BL616 debugger reports 0403:6010 “JTAG Debugger” by SIPEED with the serial “FactoryAIOT Pro” (read from a real board, 2026-10-04) — the same as the Tang Nano 9K's, so FPGALab asks which board it is unless a project names it. Checked 2026-10-04 and 2026-11-05."
 }
