@@ -1,6 +1,6 @@
 {
-  "generated" : "2026-10-04T19:58:06Z",
-  "name" : "FPGALab community boards",
+  "generated" : "2026-11-05T10:56:17Z",
+  "name" : "GateLab community boards",
   "packages" : [
     {
       "description" : "Sipeed's Tang boards with Gowin FPGAs. Starts with the Tang Primer 20K on its dock.",
@@ -10,6 +10,24 @@
       "name" : "Sipeed Tang",
       "type" : "boards",
       "versions" : [
+        {
+          "boards" : [
+            "Tang Primer 20K"
+          ],
+          "download" : {
+            "sha256" : "0a9ce5f6074a2f9b7faa7df6843cc1a2d4b98e8ffbd9ed7af400f5fe269a398a",
+            "size" : 3637,
+            "url" : "https://richardklingler.github.io/fpgaboards/packs/sipeed.tang-1.0.2.fpgapack"
+          },
+          "usb" : [
+            {
+              "pid" : "0x6010",
+              "product" : "JTAG Debugger",
+              "vid" : "0x0403"
+            }
+          ],
+          "version" : "1.0.2"
+        },
         {
           "boards" : [
             "Tang Primer 20K"
